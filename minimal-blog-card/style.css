@@ -30,7 +30,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 164px;
   background-color: var(--color-background);
   font-weight: 100;
 }
@@ -40,6 +39,7 @@ body {
   box-shadow: 8px 8px 16px 0px rgba(17, 23, 41, 0.05);
   border-radius: var(--fs-small);
   background-color: white;
+  margin-top: 164px;
 }
 
 .card-top {
