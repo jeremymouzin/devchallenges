@@ -33,7 +33,6 @@ body {
   margin-top: 164px;
   background-color: var(--color-background);
   font-weight: 100;
-  min-height: 800px;
 }
 
 .card {
