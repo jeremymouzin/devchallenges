@@ -32,6 +32,7 @@ body {
   align-items: center;
   background-color: var(--color-background);
   font-weight: 100;
+  background-color: red;
 }
 
 .card {
