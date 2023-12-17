@@ -1,0 +1,189 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --color-orange: #F5C044;
+  --color-green: #4CA154;
+  --color-grey-900: #18181B;
+  --color-grey-600: #52525A;
+  --color-grey-400: #D4D4D8;
+  --color-grey-100: #FAFAF9;
+  --color-white: white;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  padding: 72px;
+  padding-top: 163px;
+  background-color: var(--color-grey-100);
+  color: var(--color-grey-600);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 48%;
+}
+
+.title-star {
+  background-color: var(--color-orange);
+  border-radius: 50px;
+  --size: 46px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color-grey-900);
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -.1px;
+  line-height: 1.75;
+}
+
+.checklist {
+  font-size: 14px;
+  list-style: none;
+  margin-top: 32px;
+}
+
+.checklist li {
+  --size: 24px;
+  background-image: url(assets/Done_ring_round_fill.svg);
+  background-repeat: no-repeat;
+  padding-left: calc(var(--size) + 8px);
+  line-height: var(--size);
+  margin-bottom: 13px;
+  letter-spacing: -.2px;
+}
+
+.comment-company-name {
+  max-width: 86px;
+  margin-right: 16px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 8px;
+  padding-left: 38px;
+}
+
+.comment {
+  font-size: 16px;
+  font-weight: 300;
+  width: 357px;
+  padding: 30px 40px;
+  background-color: var(--color-white);
+  margin-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(225, 225, 225,.5);
+}
+
+.comment:nth-child(2n+1) {
+  align-self: flex-end;
+}
+
+.comment:nth-child(2n) {
+  align-self: flex-start;
+}
+
+.comment-rating-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.comment-rating-stars-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.comment-rating-stars-list li {
+  margin-right: 4px;
+}
+
+.comment-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-grey-900);
+  margin-bottom: 4px;
+}
+
+.comment-content {
+  font-size: 16px;
+}
+
+@media (max-width: 940px) {
+  body {
+    padding: 24px;
+    padding-top: 96px;
+  }
+
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .content {
+    max-width: 100%;
+  }
+
+  h1 {
+    margin-top: 16px;
+  }
+
+  p {
+    letter-spacing: -.1px;
+    line-height: 1.75;
+    max-width: 90%;
+  }
+ 
+  .checklist {
+    margin-top: 32px;
+  }
+
+  .checklist li {
+    letter-spacing: -0.1px;
+    margin-bottom: 13px;
+    font-weight: 300;
+  }
+
+  .comments {
+    margin-top: 48px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .comment {
+    margin-bottom: 40px;
+  }
+}
