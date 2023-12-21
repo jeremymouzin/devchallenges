@@ -1,0 +1,115 @@
+:root {
+  --row-gap: 24px;
+  --column-gap: 18px;
+}
+
+*, ::before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.reference {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .2;
+}
+
+body {
+  background-image: url('assets/bg-image.svg');
+  background-size: 100%;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: white;
+}
+
+.logo {
+  margin-left: 72px;
+  margin-top: 20px;
+}
+
+.title {
+  max-width: 600px;
+  text-align: center;
+  margin: 44px auto 0;
+  font-size: 64px;
+  letter-spacing: -.6px;
+}
+
+.tagline {
+  font-size: 32px;
+  max-width: 650px;
+  margin: 16px auto 0;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: -.1px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(205, 213, 224, .3);
+  max-width: 810px;
+  margin: 70px auto 75px;
+  padding: 32px;
+  border-radius: 24px;
+  row-gap: var(--row-gap);
+  column-gap: var(--column-gap);
+}
+
+.labeled-input {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - (var(--column-gap) / 2));
+}
+
+.labeled-input > label {
+  font-size: 14px;
+}
+
+.labeled-input > input, .labeled-input > select, .labeled-input > textarea, form > input[type="submit"] {
+  border-radius: 16px;
+  border: 0;
+  min-height: 68px;
+  margin-top: 5px;
+  padding: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: -.1px;
+}
+
+.labeled-input > input::placeholder {
+  color: #CDD5E0;
+}
+
+.labeled-input > select {
+  appearance: none;
+}
+
+.labeled-input > select {
+  background: url('assets/Expand_down.svg') no-repeat 93.5% center, white;
+}
+
+.labeled-input.message {
+  flex-basis: 100%;
+}
+
+#message {
+  padding: 22px;
+}
+
+form > input[type="submit"] {
+  flex-basis: 100%;
+  min-height: 72px;
+  margin-top: 0;
+  font-size: 20px;
+  letter-spacing: .1px;
+  color: #4036A9;
+  font-weight: 600;
+}

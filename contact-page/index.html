@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img class="reference" src="reference.jpg">
+
+  <img class="logo" src="assets/contact-form-icon.svg">
+
+  <h1 class="title">Interested in our business pricing?</h1>
+  <p class="tagline">Fill out the form to view details and we'll contact you as soon as possible.</p>
+
+  <form>
+    
+    <div class="labeled-input">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Ethan Johnson"/>
+    </div>
+
+    <div class="labeled-input">
+      <label for="company-email">Company Email</label>
+      <input type="text" id="company-email" placeholder="ethan@johnson.com"/>
+    </div>
+
+    <div class="labeled-input">
+      <label for="company-size">Company Size</label>
+      <select id="company-size">
+        <option value="50-100">50-100 employees</option>
+      </select>
+    </div>
+
+    <div class="labeled-input">
+      <label for="subject">Subject</label>
+      <select id="subject">
+        <option value="landing-page">Building Landing pages</option>
+      </select>
+    </div>
+    
+    <div class="labeled-input message">
+      <label for="message">Message</label>
+      <textarea id="message" rows="8">50-100 employees</textarea>
+    </div>
+    
+    <input type="submit" value="Contact Sales">
+  </form>
+</body>
+</html>
