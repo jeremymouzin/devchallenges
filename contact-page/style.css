@@ -23,7 +23,6 @@ img {
 
 body {
   background-image: url('assets/bg-image.svg');
-  background-size: 100%;
   font-family: 'Be Vietnam Pro', sans-serif;
   color: white;
 }
@@ -112,4 +111,34 @@ form > input[type="submit"] {
   letter-spacing: .1px;
   color: #4036A9;
   font-weight: 600;
+}
+
+@media (max-width:1024px) {
+  form {
+    max-width: 100%;
+  }
+
+  body {
+    padding: 32px;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: -8px;
+  }
+
+  .title {
+    font-size: 48px;
+    margin-top: 40px;
+    max-width: 420px;
+  }
+
+  .tagline {
+    font-size: 20px;
+    max-width: 390px;
+  }
+
+  .labeled-input > select {
+    background-position: 95%;
+  }
 }
