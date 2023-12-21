@@ -14,13 +14,6 @@ img {
   max-width: 100%;
 }
 
-.reference {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .2;
-}
-
 body {
   background-image: url('assets/bg-image.svg');
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -140,5 +133,25 @@ form > input[type="submit"] {
 
   .labeled-input > select {
     background-position: 95%;
+  }
+}
+
+@media (max-width:640px) {
+  body {
+    padding: 24px;
+    background-size: cover;
+    background-position: -500px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .labeled-input {
+    flex-basis: 100%;
+  }
+
+  form {
+    padding-bottom: 110px;
   }
 }
