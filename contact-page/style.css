@@ -45,7 +45,7 @@ body {
 form {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(205, 213, 224, .3);
+  background-color: rgba(205, 213, 224, .2);
   max-width: 810px;
   margin: 70px auto 75px;
   padding: 32px;
